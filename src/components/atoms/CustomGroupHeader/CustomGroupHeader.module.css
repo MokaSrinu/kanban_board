@@ -1,0 +1,37 @@
+.CustomGroupHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.HeaderLeft {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  align-items: center;
+}
+.HeaderRight {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  align-items: center;
+}
+.Title {
+  font-weight: 500;
+}
+.Count {
+  color: #656565;
+}
+.Icon{
+    cursor: pointer;
+    color: #656565;
+    svg{
+        fill: #656565;
+        stroke: #656565;
+    }
+}
+.Icon:hover {
+    color: blue;
+    svg{
+        fill: blue;
+        stroke: blue;
+    }
+}

@@ -1,0 +1,31 @@
+.StatusGroupingContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.StatusGroup {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .StatusGroupingContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .StatusGroupingContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .StatusGroupingContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .StatusGroupingContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

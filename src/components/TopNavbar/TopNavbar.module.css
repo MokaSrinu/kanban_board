@@ -1,0 +1,86 @@
+.TopNavbarContainer {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 1.2rem 3rem;
+  background-color: #ffffff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .TopNavbarContainer {
+    padding: 1.2rem 1rem;
+  }
+}
+
+.DropDownWrap {
+  position: relative;
+}
+
+.DisplayDropdown {
+  background-color: #ffffff;
+  padding: 0.3rem;
+  border-radius: 4px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: 1px solid #ebeaea;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: #404248;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.DisplayDropdown.Active{
+    border: 1px solid #a9a9a9;
+}
+.Icon.Active {
+  transform: rotate(180deg);
+}
+
+.DropDownMenu {
+  position: absolute;
+  top: 140%;
+  left: 0;
+  min-width: 250px;
+  z-index: 1001;
+  overflow: hidden;
+  overflow: clip;
+  display: none;
+  visibility: hidden;
+  transform-origin: top left;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border: none;
+}
+
+.DropDownMenu.Active {
+  display: block;
+  visibility: visible;
+}
+
+.MenuItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.MenuItemLabel {
+  color: #999ca2;
+}
+.GroupingDropdown {
+  select {
+    background-color: #ffffff;
+    color: #333;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 8rem;
+    font-weight: 500;
+  }
+}
